@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launch the Laser Filter Node -->
+    <node pkg="bot_control" type="reading_laser" name="laser_filter_node" output="screen"/>
+
+    <!-- Launch RViz to visualize the filtered scan -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find bot_control)/rviz/laser_filter_config.rviz"/>
+</launch>

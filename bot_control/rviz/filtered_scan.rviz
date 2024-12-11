@@ -1,0 +1,28 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Displays:
+    - Class: rviz/Grid
+      Enabled: true
+      Name: Grid
+      Value: 1
+    - Alpha: 1
+      Class: rviz/LaserScan
+      Enabled: true
+      Name: FilteredScan
+      Scan:
+        Topic: /filtered_scan
+        Unreliable: false
+      Style: points
+      Value: 1
+  Enabled: true
+  Global Options:
+    Fixed Frame: base_link
+    Value: 1
+views:
+  current:
+    Class: rviz/ViewManager
+    Name: Current View
